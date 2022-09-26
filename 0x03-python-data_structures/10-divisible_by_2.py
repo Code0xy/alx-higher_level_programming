@@ -1,15 +1,19 @@
-
 #!/usr/bin/python3
 
 
-def max_integer(my_list=[]):
-    """Find the biggest integer of a list."""
-    if len(my_list) == 0:
-        return (None)
+def divisible_by_2(my_list=[]):
+    """
+    finds all multiples of 2 in a list and returns
+    a True or False list
+    """
+    list_len = len(my_list)
+    if list_len == 0:
+        return None
 
-    big = my_list[0]
-    for i in range(len(my_list)):
-        if my_list[i] > big:
-            big = my_list[i]
-
-    return (big)
+    new_list = []
+    for i in my_list:
+        if i % 2 == 0:
+            new_list.append(True)
+        else:
+            new_list.append(False)
+    return (new_list)
