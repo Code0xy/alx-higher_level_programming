@@ -1,15 +1,14 @@
+
 #!/usr/bin/python3
 
 
 def best_score(a_dictionary):
-    """
-    gets the best value from a dictionary (greatest integer)
-    """
-    max_val = 0
-    winner = None
-    if type(a_dictionary) is dict:
-        for key, value in a_dictionary.items():
-            if value > max_val:
-                max_val = value
-                winner = key
-    return
+        if a_dictionary is None:
+                return None
+        best = 0
+        best_key = None
+        for key, val in a_dictionary.items():
+                if val > best:
+                        best = val
+                        best_key = key
+        return best_key
