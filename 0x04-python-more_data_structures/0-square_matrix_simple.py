@@ -2,7 +2,5 @@
 
 
 def square_matrix_simple(matrix=[]):
-    """
     return list(map(lambda newMatrix: list(map(lambda v: v*v,
-                newMatrix)), matrix))"""
-                return ([[(x**2) for x in row] for row in matrix])
+                newMatrix)), matrix))
